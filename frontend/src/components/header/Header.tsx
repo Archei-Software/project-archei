@@ -12,11 +12,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-[#101010] border-b border-b-[#1d1e20]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="bg-[#101010] border-b border-b-[#2e2e2e]">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/pt-br" className="flex-shrink-0 flex items-center mr-32">
+            <Link to="/pt-br" className="flex-shrink-0 flex items-center mr-32 ml-64">
               <img
                 className="block lg:hidden h-8 w-auto"
                 src={logoMin}
@@ -29,25 +29,24 @@ const Header: React.FC = () => {
               />
             </Link>
             <div className="hidden sm:ml-6 sm:flex">
-              <Link to="/pt-br/sobre" className="px-3 py-2 text-white hover:text-red-600 rounded-md font-medium mr-2">
+              <Link to="/pt-br/sobre" className="px-3 py-2 duration-200 text-white hover:text-red-600 rounded-md font-semibold mr-2">
                 Sobre a Archei
               </Link>
-              <Link to="/pt-br/oque-fazemos" className="px-3 py-2 text-white hover:text-red-600 rounded-md font-medium mr-2">
+              <Link to="/pt-br/oque-fazemos" className="px-3 py-2 duration-200 text-white hover:text-red-600 rounded-md font-semibold mr-2">
                 O que fazemos
               </Link>
-              <Link to="/pt-br/nosso-trabalho" className="px-3 py-2 text-white hover:text-red-600 rounded-md font-medium mr-2">
+              <Link to="/pt-br/nosso-trabalho" className="px-3 py-2 duration-200 text-white hover:text-red-600 rounded-md font-semibold mr-2">
                 Nosso trabalho
               </Link>
-              <Link to="/pt-br/contato" className="px-3 py-2 text-white hover:bg-red-600 font-medium border-2 border-red-600 mr-4">
+              <Link to="/pt-br/contato" className="px-3 py-2 duration-200 text-white hover:bg-red-600 hover:text-black font-semibold border-2 border-red-600 mr-4">
                 Entre em contato
               </Link>
-              <Link to="/pt-br/login" className="px-3 py-2 text-white hover:bg-red-700 hover:border-red-700  font-medium border-2 border-red-600 bg-red-600 rounded-lg mr-2">
-                Login
-              </Link>
-              <Link to="/pt-br" className="px-3 py-2 text-white hover:text-red-600 rounded-md font-medium">
+              <Link to="/pt-br" className="px-3 py-2 duration-200 text-white hover:text-red-600 rounded-md font-semibold mr-[32rem]">
                 PT-BR
               </Link>
-              
+              <Link to="/pt-br/login" className="px-3 py-2 duration-200 text-white hover:bg-red-600 hover:text-black border-red-600  font-semibold border-2 rounded-lg mr-2">
+                Login
+              </Link>
             </div>
           </div>
           <div className="flex items-center sm:hidden">

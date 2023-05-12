@@ -5,9 +5,9 @@ import logo from "./../../assets/imgs/logo.png";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#101010] text-white pt-12 border-t border-t-[#1d1e20]">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between">
-        <div className="flex flex-col items-center mb-4">
+    <footer className="bg-[#101010] text-white pt-12 border-t border-t-[#2e2e2e]">
+      <div className="container mx-auto flex flex-col md:flex-row ">
+        <div className="flex flex-col items-center mb-4 mr-64">
           <img src={logo} alt="Logo da Archei" className="w-44 mb-4 mr-2" />
           <div className="md:w-1/3 flex justify-center">
             <a
@@ -37,47 +37,101 @@ const Footer: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="md:w-1/3 mb-6 md:mb-0 mr-5 ml-2">
-          <h2 className="text-xl font-bold mb-4">Sobre a Archei</h2>
-          <p className="text-white text-justify">
-            &nbsp; A Archei Software é uma empresa especializada no
-            desenvolvimento de plataformas e soluções digitais que visam ajudar
-            organizações a alcançarem seus objetivos de negócios por meio de
-            tecnologia inovadoras e eficientes. A empresa tem como objetivo
-            fornecer soluções personalizadas e escaláveis para empresas de todos
-            os tamanhos e setores de forma sustentável.
-          </p>
-          <a href="/" className="text-red-500 hover:text-red-700">
-            Seguir para a página.
-          </a>
-        </div>
-        <div className="md:w-1/3 mb-6 md:mb-0 mr-5 ml-2">
-          <h2 className="text-xl font-bold mb-4">Voluptatibus, neque.</h2>
-          <p className="text-white text-justify">
-            &nbsp; Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Veniam aliquam enim tenetur deleniti perspiciatis assumenda cum
-            possimus pariatur eligendi doloremque quae ipsam quaerat saepe ipsa
-            repellat illum ex, culpa consequuntur!.
-          </p>
-          <a href="/" className="text-red-500 hover:text-red-700">
-            Seguir para a página.
-          </a>
-        </div>
-        <div className="md:w-1/3 mb-6 md:mb-0 mr-5 ml-2">
-          <h2 className="text-xl font-bold mb-4">Adipisicing elit.</h2>
-          <p className="text-white text-justify">
-            &nbsp; Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Dolorem ipsa molestias similique cum ullam veritatis assumenda,
-            magni nihil, sit nulla saepe. Deserunt itaque ducimus fugiat
-            reiciendis ea sapiente magnam assumenda..
-          </p>
-          <a href="/" className="text-red-500 hover:text-red-700">
-            Seguir para a página.
-          </a>
+        <div className="flex row md:text-left text-center -mb-10 -mx-4">
+          <div className=" w-full px-4">
+            <h2 className="font-extrabold text-white text-3xl mb-3">Categorias</h2>
+            <section className="mb-10 flex flex-col justify-center items-start">
+              <p className="w-[20rem]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                provident qui, sed odit unde sunt dolorem esse, sequi ipsum
+                dolorum.
+              </p>
+              <a
+                href="/"
+                className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white hover:text-red-500 duration-200 gap-x-2 sm:w-auto font-semibold rounded-lg mr-2 mt-7"
+              >
+                <span className="font-bold text-lg">Acessar Link</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="w-7 h-7 rotate-180 text-red-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+                  />
+                </svg>
+              </a>
+            </section>
+          </div>
+          <div className=" w-full px-4">
+            <h2 className="font-extrabold text-white text-3xl mb-3">Categorias</h2>
+            <section className="mb-10 flex flex-col justify-center items-start">
+              <p className="w-[20rem]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                provident qui, sed odit unde sunt dolorem esse, sequi ipsum
+                dolorum.
+              </p>
+              <a
+                href="/"
+                className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white hover:text-red-500 duration-200 gap-x-2 sm:w-auto font-semibold rounded-lg mr-2 mt-7"
+              >
+                <span className="font-bold text-lg">Acessar Link</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="w-7 h-7 rotate-180 text-red-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+                  />
+                </svg>
+              </a>
+            </section>
+          </div>
+          <div className=" w-full px-4">
+            <h2 className="font-extrabold text-white text-3xl mb-3">Categorias</h2>
+            <section className="mb-10 flex flex-col justify-center items-start">
+              <p className="w-[20rem]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                provident qui, sed odit unde sunt dolorem esse, sequi ipsum
+                dolorum.
+              </p>
+              <a
+                href="/"
+                className="flex w-1/2 px-5 py-2 text-sm text-white hover:text-red-500 duration-200 gap-x-2 sm:w-auto font-semibold rounded-lg mr-2 mt-7"
+              >
+                <span className="font-bold text-lg">Acessar Link</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="w-7 h-7 rotate-180 text-red-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+                  />
+                </svg>
+              </a>
+            </section>
+          </div>
         </div>
       </div>
-      <div className="text-center mt-10 mb-2">
-        <p className="text-gray-200 text-xs">
+      <div className="flex justify-center ml-[30%]  mt-10 mb-2 border-t border-[#2e2e2e] w-[50rem] ">
+        <p className="text-gray-200 text-xs mt-2">
           © 2023 Archei Software - Todos os direitos reservados.
         </p>
       </div>
