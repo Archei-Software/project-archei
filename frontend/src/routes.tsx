@@ -1,6 +1,6 @@
 import Loader from './pages/misc/Loader';
 import Home from './pages/Home';
-import Contact from './pages/ContactPage';
+import Contact from './pages/Contact';
 import Work from './pages/Work';
 import About from './pages/About';
 import WeDo from './pages/WeDo';

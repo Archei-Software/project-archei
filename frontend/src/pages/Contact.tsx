@@ -1,17 +1,17 @@
 import Header from "../components/header/Header";
-import Contact from "../components/contact/Contact";
+import Message from "../components/message/Message";
 import Footer from "../components/footer/Footer";
 import usePageTitle from '../hooks/UsePageTitle';
 
-const ContactPage = () => {
+const Contact = () => {
   return (
     <>
     {usePageTitle('Contato | Archei Software')}
       <Header />
-      <Contact />
+      <Message />
       <Footer />
     </>
   );
 };
 
-export default ContactPage;
+export default Contact;

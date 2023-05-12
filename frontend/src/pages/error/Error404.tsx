@@ -8,8 +8,8 @@ const Error404 = () => {
       {usePageTitle("Erro 404 | Archei Software")}
       <Header />
       <main className="flex flex-col justify-center items-center mt-[12rem] mb-[12rem]">
-        <h1 className="text-6xl font-bold mb-4 text-white">ERRO 404</h1>
-        <p className="text-xl mb-4 text-white text-center">
+        <h1 className="text-6xl font-bold mb-4 dark:text-white">ERRO 404</h1>
+        <p className="text-xl mb-4 dark:text-white text-center">
           Oops, parece que a página que você está procurando não existe...
         </p>
         <a
