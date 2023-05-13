@@ -5,6 +5,7 @@ import Work from './pages/Work';
 import About from './pages/About';
 import WeDo from './pages/WeDo';
 import Error404 from './pages/error/Error404'
+import Login from './pages/Login'
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 const Rotas = () => (
@@ -16,6 +17,7 @@ const Rotas = () => (
       <Route path="/pt-br/contato" element={<Contact />} />
       <Route path="/pt-br/nosso-trabalho" element={<Work />} />
       <Route path="/pt-br/sobre" element={<About />} />
+      <Route path="/pt-br/login" element={<Login />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
   </Router>
