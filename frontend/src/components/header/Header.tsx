@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   };
   
   const isActive2 = (path: string) => {
-    return location.pathname === path ? 'dark:bg-red-500 bg-red-500 text-black dark:text-black' : '';
+    return location.pathname === path ? 'dark:bg-red-500 bg-red-500 text-white dark:text-black' : '';
   };
 
   useEffect(() => {

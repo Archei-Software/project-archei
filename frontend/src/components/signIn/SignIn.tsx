@@ -65,7 +65,7 @@ const SignIn: React.FC = () => {
                         Senha
                       </label>
                       <a
-                        href="#"
+                        href="/pt-br/forgot-password"
                         className="text-sm text-gray-400 focus:text-red-500 hover:text-red-500 hover:underline"
                       >
                         Esqueceu sua senha?
@@ -91,7 +91,7 @@ const SignIn: React.FC = () => {
                 <p className="mt-6 text-sm text-center text-gray-400">
                   Tem interesse em uma vaga?{" "}
                   <a
-                    href="#"
+                    href="/pt-br/sign-up"
                     className="text-red-500 focus:outline-none focus:underline hover:underline"
                   >
                     Cadastre-se
