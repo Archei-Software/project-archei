@@ -4,7 +4,7 @@ import logo from "./../../assets/imgs/logoMin.png";
 const Footer: React.FC = () => {
   return (
     <>
-    <footer className="text-gray-600 body-font border-t border-[#2e2e2e]">
+    <footer className="text-gray-600 body-font border-t border-gray-200 dark:border-[#2e2e2e]">
     <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
       <img src={logo} alt="Logo da Archei" className="w-10" />
