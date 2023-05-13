@@ -18,11 +18,11 @@ const Header: React.FC = () => {
   
   const location = useLocation();
   const isActive = (path: string) => {
-    return location.pathname === path ? 'dark:text-red-500 text-red-500' : '';
+    return location.pathname === path ? 'dark:text-red-500 text-red-500' : 'dark:text-white text-black';
   };
   
   const isActive2 = (path: string) => {
-    return location.pathname === path ? 'dark:bg-red-500 bg-red-500 text-white dark:text-black' : '';
+    return location.pathname === path ? 'dark:bg-red-500 bg-red-500 text-white dark:text-black' : 'dark:text-white text-black';
   };
 
   useEffect(() => {
@@ -67,31 +67,31 @@ const Header: React.FC = () => {
               <div className="hidden sm:ml-6 sm:flex">
                 <Link
                   to="/pt-br/sobre"
-                  className={`px-3 py-2 duration-200 dark:text-white hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-2 ${isActive('/pt-br/sobre')}`}
+                  className={`px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-2 ${isActive('/pt-br/sobre')}`}
                 >
                   Sobre a Archei
                 </Link>
                 <Link
                   to="/pt-br/oque-fazemos"
-                  className={`px-3 py-2 duration-200 dark:text-white hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold ${isActive('/pt-br/oque-fazemos')}`}
+                  className={`px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold ${isActive('/pt-br/oque-fazemos')}`}
                 >
                   O que fazemos
                 </Link>
                 <Link
                   to="/pt-br/nosso-trabalho"
-                  className={`px-3 py-2 duration-200 dark:text-white hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-2 ${isActive('/pt-br/nosso-trabalho')}`}
+                  className={`px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-2 ${isActive('/pt-br/nosso-trabalho')}`}
                 >
                   Nosso trabalho
                 </Link>
                 <Link
                   to="/pt-br/contato"
-                  className={`px-3 py-2 duration-200 dark:text-white hover:bg-red-600 hover:text-white dark:hover:text-black font-semibold border-2 border-red-600 mr-4 ${isActive2('/pt-br/contato')}`}
+                  className={`px-3 py-2 duration-200 hover:bg-red-600 hover:text-white dark:hover:text-black font-semibold border-2 border-red-600 mr-4 ${isActive2('/pt-br/contato')}`}
                 >
                   Entre em contato
                 </Link>
                 <Link
                   to="/pt-br"
-                  className="px-3 py-2 duration-200 dark:text-white hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-[20rem]"
+                  className="px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-[20rem] dark:text-white text-black"
                 >
                   PT-BR
                 </Link>
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
                 </div>
                 <Link
                   to="/pt-br/login"
-                  className={`px-3 py-2 duration-200 dark:text-white hover:bg-red-600 hover:text-white dark:hover:text-black border-red-600  font-semibold border-2 rounded-lg mr-2 ${isActive2('/pt-br/login')}`}
+                  className={`px-3 py-2 duration-200  hover:bg-red-600 hover:text-white dark:hover:text-black border-red-600  font-semibold border-2 rounded-lg mr-2 ${isActive2('/pt-br/login')}`}
                 >
                   Login
                 </Link>
