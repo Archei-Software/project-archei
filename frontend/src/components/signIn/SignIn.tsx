@@ -13,9 +13,7 @@ const SignIn: React.FC = () => {
                     <h2 className="text-2xl font-bold text-white sm:text-3xl">Archei Software</h2>
 
                     <p className="max-w-xl mt-3 text-gray-300">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
-                        autem ipsa, nulla laboriosam dolores, repellendus perferendis libero suscipit nam temporibus
-                        molestiae
+                        Bem vindo! A Archei agradece mais um dia com você, e lembre-se que qualquer caminhada começa com um passo.
                     </p>
                 </div>
             </div>
@@ -55,7 +53,7 @@ const SignIn: React.FC = () => {
 
                     </form>
 
-                    <p className="mt-6 text-sm text-center text-gray-400">Não possuí uma conta ainda? <a href="#" className="text-red-500 focus:outline-none focus:underline hover:underline">Cadastre-se</a>.</p>
+                    <p className="mt-6 text-sm text-center text-gray-400">Tem interesse em uma vaga? <a href="#" className="text-red-500 focus:outline-none focus:underline hover:underline">Cadastre-se</a>.</p>
                 </div>
             </div>
         </div>

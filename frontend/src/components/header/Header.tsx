@@ -155,6 +155,12 @@ const Header: React.FC = () => {
             >
               Entre em contato
             </Link>
+            <Link
+              to="/pt-br/login"
+              className="block px-3 py-2 text-white hover:bg-red-700 rounded-md"
+            >
+              Login
+            </Link>
           </div>
         </nav>
       </header>

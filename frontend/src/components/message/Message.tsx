@@ -15,17 +15,11 @@ const Message: React.FC = () => {
             style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
           ></iframe>
         </div>
-        <div className="container px-5 py-24 mx-auto flex">
+        <div className="container px-5 py-24 mx-auto flex mt-20">
           <div className="lg:w-1/3 md:w-1/2 bg-white dark:bg-[#101010] rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
             <h2 className="text-black dark:text-white text-lg mb-1 font-medium title-font">
               Entre em contato
             </h2>
-            <p className="leading-relaxed mb-5  dark:text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-              soluta quam ullam aliquid beatae sunt cupiditate iusto ipsam odit
-              sint debitis amet libero laboriosam autem molestias officiis saepe
-              qui vel!
-            </p>
             <div className="relative mb-4">
               <label
                 htmlFor="email"
