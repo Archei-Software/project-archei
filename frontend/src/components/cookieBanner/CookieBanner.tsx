@@ -18,7 +18,9 @@ const CookieBanner = () => {
     document.cookie = "cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
     // Logic to close the modal
     const modal = document.getElementById("cookie-modal");
-    modal.style.display = "none";
+    if (modal) {
+      modal.style.display = "none";
+    }
   };
 
   if (cookieConsent) {
