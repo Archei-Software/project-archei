@@ -1,11 +1,15 @@
 import { useState } from "react";
 
 const CookieBanner = () => {
-  const [cookieConsent, setCookieConsent] = useState(false);
-
+  const [cookieConsent, setCookieConsent] = useState(() => {
+    const consent = document.cookie
+      .split("; ")
+      .find(row => row.startsWith("cookieConsent="));
+    return consent ? consent.split("=")[1] === "true" : false;
+  });
   const handleAcceptCookies = () => {
     setCookieConsent(true);
-    // Aqui você pode adicionar lógica para gerenciar os cookies
+    document.cookie = "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT"; // Salva o consentimento do usuário no cookie com uma data de expiração futura
   };
 
   const handleDeclineCookies = () => {
