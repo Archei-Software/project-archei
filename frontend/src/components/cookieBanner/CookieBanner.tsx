@@ -54,7 +54,7 @@ const CookieBanner = () => {
         id="cookie-modal"
         className="fixed z-50 inset-0 flex items-center justify-center bg-black bg-opacity-50"
       >
-        <div className="max-w-md p-4 mx-auto bg-white border-2 border-red-500 dark:bg-[#101010] dark:border-gray-700 rounded-2xl">
+        <div className="max-w-md shadow-2xl p-4 mx-auto bg-white border-2 border-gray-500 dark:bg-[#101010] dark:border-gray-500 rounded-2xl">
           <h2 className="font-semibold text-gray-800 dark:text-white">
             🍪 Nós usamos cookies!
           </h2>
@@ -70,13 +70,13 @@ const CookieBanner = () => {
 
           <div className="grid grid-cols-2 gap-4 mt-4 shrink-0">
             <button
-              className="text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+              className="text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-300 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
               onClick={handleAcceptCookies}
             >
               Aceitar
             </button>
             <button
-              className="text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+              className="text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-300 dark:text-white dark:hover:bg-gray-900 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
               onClick={handleDeclineCookies}
             >
               Não Aceitar

@@ -10,9 +10,11 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
 
-  const [darkMode, setDarkMode] = useState(() =>
-    document.cookie.includes("darkMode=true")
-  );
+  const [darkMode, setDarkMode] = useState(() => {
+    const isDarkMode =
+      document.cookie.includes("darkMode=true") || window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return isDarkMode;
+  });
 
   const location = useLocation();
   const isActive = (path: string) => {
