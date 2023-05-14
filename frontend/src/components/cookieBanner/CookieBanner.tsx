@@ -36,7 +36,7 @@ const CookieBanner = () => {
 
   useEffect(() => {
     if (cookieConsent !== "") {
-      if (cookieConsent) {
+      if (cookieConsent === true || cookieConsent === false) {
         enableSiteInteraction();
       } else {
         disableSiteInteraction();
