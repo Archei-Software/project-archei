@@ -20,7 +20,7 @@ const FeatureMain1 = () => {
                     <MdOutlineDevices></MdOutlineDevices>
                   </div>
                   <h2 className="text-gray-900 text-lg title-font font-medium">
-                    Aplicacações Modernas | Modern Applications
+                    Aplicações Modernas | Modern Applications
                   </h2>
                 </div>
                 <div className="flex-grow">
