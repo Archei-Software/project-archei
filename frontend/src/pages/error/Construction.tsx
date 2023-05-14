@@ -2,15 +2,15 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import usePageTitle from "../../hooks/UsePageTitle";
 
-const Error404 = () => {
+const Construction = () => {
   return (
     <>
-      {usePageTitle("Erro 404 | Archei Software")}
+      {usePageTitle("Interditado | Archei Software")}
       <Header />
       <main className="flex flex-col justify-center items-center mt-[12rem] mb-[12rem]">
-        <h1 className="lg:text-6xl text-3xl font-bold mb-4 dark:text-white">🚫 ERRO 404</h1>
+        <h1 className="lg:text-6xl text-3xl font-bold mb-4 dark:text-white">👷‍♂️ Página em obra! 🚧</h1>
         <p className="text-xl mb-4 dark:text-white text-center">
-          Oops, parece que a página que você está procurando não existe...
+          Oops, parece que a página que você está procurando ainda está em construção...
         </p>
         <a
           href="/"
@@ -38,4 +38,4 @@ const Error404 = () => {
   );
 };
 
-export default Error404;
+export default Construction;
