@@ -59,27 +59,27 @@ const Navigation = () => {
               <div
                 className={`${
                   darkMode
-                    ? "w-[4.8rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full"
-                    : "w-20 bg-gray-300 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full"
+                    ? "h-[2rem] pr-[1rem] bg-gray-700 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full"
+                    : " h-[2rem] pr-[1rem] bg-gray-300 lg:mr-10 sm:mr-0 lg:pr-4  border-2 border-red-500 dark:border-red-500 rounded-full"
                 }`}
               >
                 <button
-                  className={`bg-gray-100 dark:bg-gray-800 duration-700 px-2 py-[0.8rem] rounded-3xl ${
-                    darkMode ? "translate-x-4 bg-gray-600" : ""
+                  className={` h-[1.75rem] bg-gray-100 dark:bg-gray-800 duration-700 px-2  rounded-3xl ${
+                    darkMode ? "h-[1.75rem] translate-x-4 bg-gray-600 " : ""
                   }`}
                   onClick={handleDarkModeToggle}
                 >
                   {darkMode ? (
-                    <FiMoon className="text-red-500 w-10" />
+                    <FiMoon className="text-red-500 w-4" />
                   ) : (
-                    <FiSun className="text-red-500 w-10" />
+                    <FiSun className="text-red-500 w-4 " />
                   )}
                 </button>
               </div>
               <button
                 onClick={toggleMenu}
                 type="button"
-                className="ml-10 text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                className=" ml-2 text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
                 aria-label="toggle menu"
               >
                 <svg
