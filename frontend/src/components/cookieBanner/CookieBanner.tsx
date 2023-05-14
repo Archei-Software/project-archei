@@ -8,6 +8,10 @@ const CookieBanner = () => {
     // Aqui você pode adicionar lógica para gerenciar os cookies
   };
 
+  const handleDeclineCookies = () => {
+    // Aqui você pode adicionar lógica para lidar com a recusa dos cookies
+  };
+
   if (cookieConsent) {
     return null; // Retorna null se o consentimento já foi dado
   }
@@ -19,7 +23,7 @@ const CookieBanner = () => {
       </h2>
 
       <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
-      Olá, este site utiliza cookies essenciais para garantir seu correto funcionamento e para melhorar seu desenvolvimento. Os cookies de rastreamento serão configurados apenas após o consentimento.{" "}
+        Olá, este site utiliza cookies essenciais para garantir seu correto funcionamento e para melhorar seu desenvolvimento. Os cookies de rastreamento serão configurados apenas após o consentimento.{" "}
         <a
           href="#"
           className="font-medium text-gray-700 underline transition-colors duration-300 dark:hover:text-red-400 dark:text-white hover:text-red-500"
@@ -40,8 +44,11 @@ const CookieBanner = () => {
         >
           Aceitar
         </button>
-        <button className=" text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none">
-            Não Aceitar
+        <button
+          className="text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+          onClick={handleDeclineCookies}
+        >
+          Não Aceitar
         </button>
       </div>
     </section>
