@@ -30,7 +30,7 @@ const CookieBanner = () => {
   return (
     <section
       id="cookie-modal"
-      className="fixed max-w-md p-4 mx-auto bg-white border-2 border-red-500 dark:bg-[#101010] sm:left-0 lg:left-12  sm:top-5 lg:bottom-16 dark:border-gray-700 rounded-2xl"
+      className="fixed max-w-md p-4 mx-auto bg-white border-2 border-red-500 dark:bg-[#101010] left-12 bottom-16 dark:border-gray-700 rounded-2xl"
     >
       <h2 className="font-semibold text-gray-800 dark:text-white">
         🍪 Nós usamos cookies!
