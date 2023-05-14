@@ -61,8 +61,7 @@ const CookieBanner = () => {
 
           <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
             Olá, este site utiliza cookies essenciais para garantir seu correto
-            funcionamento e para melhorar seu desenvolvimento. Os cookies de
-            rastreamento serão configurados apenas após o consentimento.
+            funcionamento e para melhorar seu desenvolvimento. Os cookies serão configurados apenas após o consentimento.
           </p>
 
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
