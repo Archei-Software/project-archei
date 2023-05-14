@@ -35,7 +35,7 @@ const CookieBanner = () => {
 
       <div className="grid grid-cols-2 gap-4 mt-4 shrink-0">
         <button
-          className="mt-2 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
+          className="text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
           onClick={handleAcceptCookies}
         >
           Aceitar
