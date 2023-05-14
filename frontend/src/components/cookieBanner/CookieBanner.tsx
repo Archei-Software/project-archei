@@ -4,26 +4,32 @@ const CookieBanner = () => {
   const [cookieConsent, setCookieConsent] = useState(() => {
     const consent = document.cookie
       .split("; ")
-      .find(row => row.startsWith("cookieConsent="));
+      .find((row) => row.startsWith("cookieConsent="));
     return consent ? consent.split("=")[1] === "true" : false;
   });
+
   const handleAcceptCookies = () => {
     setCookieConsent(true);
-    document.cookie = "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT"; // Salva o consentimento do usuário no cookie com uma data de expiração futura
+    document.cookie = "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
   };
 
   const handleDeclineCookies = () => {
     setCookieConsent(false);
-    document.cookie = "cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT"; 
-    // Aqui você pode adicionar lógica para lidar com a recusa dos cookies
+    document.cookie = "cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    // Logic to close the modal
+    const modal = document.getElementById("cookie-modal");
+    modal.style.display = "none";
   };
 
   if (cookieConsent) {
-    return null; // Retorna null se o consentimento já foi dado
+    return null;
   }
 
   return (
-    <section className="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-[#101010] left-12 bottom-16 dark:border-gray-700 rounded-2xl">
+    <section
+      id="cookie-modal"
+      className="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-[#101010] left-12 bottom-16 dark:border-gray-700 rounded-2xl"
+    >
       <h2 className="font-semibold text-gray-800 dark:text-white">
         🍪 Nós usamos cookies!
       </h2>
