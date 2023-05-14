@@ -1,14 +1,14 @@
 import Loader from './pages/misc/Loader';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Work from './pages/Work';
-import About from './pages/About';
-import WeDo from './pages/WeDo';
+//import Work from './pages/Work';
+//import About from './pages/About';
+//import WeDo from './pages/WeDo';
 import Error404 from './pages/error/Error404'
 import Construction from './pages/error/Construction';
 import Login from './pages/Login'
 import PrivateRoute from './pages/private/Private';
-import HomeUser from './pages/private/HomeUser';
+//import HomeUser from './pages/private/HomeUser';
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 const Rotas = () => (
