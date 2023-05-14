@@ -13,6 +13,8 @@ const CookieBanner = () => {
   };
 
   const handleDeclineCookies = () => {
+    setCookieConsent(false);
+    document.cookie = "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT"; 
     // Aqui você pode adicionar lógica para lidar com a recusa dos cookies
   };
 
@@ -21,20 +23,13 @@ const CookieBanner = () => {
   }
 
   return (
-    <section className="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-[#101010] left-12 bottom-16 dark:border-[#101010] rounded-2xl">
+    <section className="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-[#101010] left-12 bottom-16 dark:border-gray-700 rounded-2xl">
       <h2 className="font-semibold text-gray-800 dark:text-white">
         🍪 Nós usamos cookies!
       </h2>
 
       <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
-        Olá, este site utiliza cookies essenciais para garantir seu correto funcionamento e para melhorar seu desenvolvimento. Os cookies de rastreamento serão configurados apenas após o consentimento.{" "}
-        <a
-          href="#"
-          className="font-medium text-gray-700 underline transition-colors duration-300 dark:hover:text-red-400 dark:text-white hover:text-red-500"
-        >
-          Deixe eu escolher
-        </a>
-        .{" "}
+        Olá, este site utiliza cookies essenciais para garantir seu correto funcionamento e para melhorar seu desenvolvimento. Os cookies de rastreamento serão configurados apenas após o consentimento.
       </p>
 
       <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
