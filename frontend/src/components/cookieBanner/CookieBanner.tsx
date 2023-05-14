@@ -14,7 +14,7 @@ const CookieBanner = () => {
 
   const handleDeclineCookies = () => {
     setCookieConsent(false);
-    document.cookie = "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT"; 
+    document.cookie = "cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT"; 
     // Aqui você pode adicionar lógica para lidar com a recusa dos cookies
   };
 
