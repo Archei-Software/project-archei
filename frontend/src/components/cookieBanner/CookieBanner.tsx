@@ -13,7 +13,7 @@ const CookieBanner = () => {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
+    <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 opacity-0 transition-opacity duration-300 hover:opacity-100 z-20">
       <p>
         Este site utiliza cookies para melhorar a sua experiência. Clique em "Aceitar" para permitir que o site gerencie os cookies.
       </p>
