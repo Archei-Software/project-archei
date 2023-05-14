@@ -49,7 +49,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between">
             <Link to="/pt-br" className="flex items-center justify-between">
               <img className="w-10 h-10" src={logoMin} alt="" />
-              <h1 className="text-black dark:text-white mt-3 ml-1 text-2xl ">
+              <h1 className="sm:hidden lg:block text-black dark:text-white mt-3 ml-1 text-2xl ">
                 Archei Software
               </h1>
             </Link>
