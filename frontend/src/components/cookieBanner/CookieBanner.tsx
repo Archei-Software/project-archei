@@ -15,7 +15,7 @@ const CookieBanner = () => {
   return (
     <section className="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-gray-800 left-12 bottom-16 dark:border-gray-700 rounded-2xl">
       <h2 className="font-semibold text-gray-800 dark:text-white">
-        🍪 We use cookies!
+        🍪 Nós usamos cookies!
       </h2>
 
       <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
