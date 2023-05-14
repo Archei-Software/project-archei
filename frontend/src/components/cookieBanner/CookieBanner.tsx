@@ -19,14 +19,12 @@ const CookieBanner = () => {
       </h2>
 
       <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
-        Hi, this website uses essential cookies to ensure its proper operation
-        and tracking cookies to understand how you interact with it. The latter
-        will be set only after consent.{" "}
+      Olá, este site utiliza cookies essenciais para garantir seu correto funcionamento e cookies de rastreamento para entender como você interage com ele. Os cookies de rastreamento serão configurados apenas após o consentimento.{" "}
         <a
           href="#"
-          className="font-medium text-gray-700 underline transition-colors duration-300 dark:hover:text-blue-400 dark:text-white hover:text-blue-500"
+          className="font-medium text-gray-700 underline transition-colors duration-300 dark:hover:text-red-400 dark:text-white hover:text-red-500"
         >
-          Let me choose
+          Deixe eu escolher.
         </a>
         .{" "}
       </p>
