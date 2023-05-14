@@ -24,13 +24,13 @@ const CookieBanner = () => {
           href="#"
           className="font-medium text-gray-700 underline transition-colors duration-300 dark:hover:text-red-400 dark:text-white hover:text-red-500"
         >
-          Deixe eu escolher.
+          Deixe eu escolher
         </a>
         .{" "}
       </p>
 
       <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
-        Closing this modal default settings will be saved.
+        Ao fechar esse modal, as configurações padrões serão salvas.
       </p>
 
       <div className="grid grid-cols-2 gap-4 mt-4 shrink-0">
@@ -39,6 +39,9 @@ const CookieBanner = () => {
           onClick={handleAcceptCookies}
         >
           Aceitar
+        </button>
+        <button className=" text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+            Não Aceitar
         </button>
       </div>
     </section>
