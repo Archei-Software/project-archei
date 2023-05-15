@@ -33,6 +33,7 @@ const Message: React.FC = () => {
                 type="email"
                 id="email"
                 name="email"
+                placeholder='seuemail@exemplo.com'
                 className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 data-ddg-inputtype="identities.emailAddress"
                 data-ddg-autofill="true"
@@ -57,6 +58,7 @@ const Message: React.FC = () => {
               <textarea
                 id="message"
                 name="message"
+                placeholder='Sua mensagem.'
                 className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>

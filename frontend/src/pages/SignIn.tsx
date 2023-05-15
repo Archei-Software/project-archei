@@ -5,7 +5,7 @@ import usePageTitle from "../hooks/UsePageTitle";
 const login: React.FC = () => {
   return (
     <>
-      {usePageTitle("Login | Archei Software")}
+      {usePageTitle("Sign In | Archei Software")}
       <Header />
       <SignIn />
       <Footer />

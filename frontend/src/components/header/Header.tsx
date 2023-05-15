@@ -19,13 +19,13 @@ const Navigation = () => {
   const location = useLocation();
   const isActive = (path: string) => {
     return location.pathname === path
-      ? "dark:text-red-500 text-red-500"
+      ? "dark:text-red-600 text-red-600"
       : "dark:text-white text-black";
   };
 
   const isActive2 = (path: string) => {
     return location.pathname === path
-      ? "dark:bg-red-500 bg-red-500 text-white dark:text-black"
+      ? "dark:bg-red-600 bg-red-600 text-white dark:text-black"
       : "dark:text-white text-black";
   };
 
@@ -185,12 +185,12 @@ const Navigation = () => {
                 </button>
               </div>
               <Link
-                to="/pt-br/login"
+                to="/pt-br/sign-in"
                 className={`px-3 py-2 duration-200  lg:hover:bg-red-600  sm:hover:bg-none hover:text-red-500 lg:hover:text-white lg:hover:dark:text-black dark:hover:text-red-500 border-red-600  font-semibold lg:border-2 sm:border-0 rounded-lg mr-2 ${isActive2(
-                  "/pt-br/login"
+                  "/pt-br/sign-in"
                 )}`}
               >
-                Login
+                Entrar
               </Link>
             </div>
           </div>
