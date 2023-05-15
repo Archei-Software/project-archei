@@ -2,36 +2,52 @@ import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
 
 const UserSchema = new mongoose.Schema({
-    username: {
-        type: String,
-        required: true,
-    },
-    password: {
-        type: String,
-        required: true,
-    },
-    level: {
-        type: String,
-        required: true,
-    },
-    email: {
-        type: String,
-        required: true,
-        unique: true,
-        lowercase: true
-    },
-    phone: {
-        type: String,
-        required: true,
-    },
-    avatar: {
-        type: Buffer,
-    }
+  username: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  permission: {
+    type: String,
+    required: true,
+  },
+  function: {
+    type: String,
+    required: true,
+  },
+  tecnologies: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+    lowercase: true
+  },
+  phone: {
+    type: String,
+    required: false,
+  },
+  bio: {
+    type: String,
+    required: false,
+  },
+  dateBirth: {
+    type: String,
+    required: true,
+  },
+  avatar: {
+    type: Buffer,
+  }
 });
 
 UserSchema.pre("save", async function (next) {
-    this.password = await bcrypt.hash(this.password, 10);
-    next();
+  this.password = await bcrypt.hash(this.password, 10);
+  next();
 });
 
 UserSchema.pre("findOneAndUpdate", async function (next) {
@@ -51,7 +67,7 @@ User.findOne({ username: "admin" })
       const adminUser = new User({
         username: "admin",
         password: "admin",
-        level: "Gerente",
+        permission: "Gerente",
         email: "admin@gmail.com",
         phone: "(71) 98799-8888",
         avatar: ""
