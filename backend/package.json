@@ -6,9 +6,7 @@
     "name": "Bruno Seixas",
     "email": "seixasbru@gmail.com"
   },
-  "engines": {
-    "node": "v18.16.0"
-  },
+
   "license": "MIT",
   "main": "index.js",
   "type": "module",
