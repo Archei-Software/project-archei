@@ -1,15 +1,12 @@
 import {AiOutlineMail} from 'react-icons/ai';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import img from '../../assets/imgs/image.png'
 
 
 const Message: React.FC = () => {
 const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [message, setMessage] = useState('');
-//const [image = {img}] = useState('');
-
 
   function sendEmail (e: any) {
     e.preventDefault()
@@ -17,7 +14,6 @@ const [message, setMessage] = useState('');
       from_name: name,
       message: message,
       email: email,
-      img
     }
     console.log(templateParams)
     emailjs.send("service_qb7vvtg", "template_ftk18x6", templateParams, "Vfrdy_j6MLcNUX3aE").then((response) => {
