@@ -6,15 +6,18 @@ import FeatureMain from "../components/featureMain/FeatureMain";
 import FeatureMain1 from "../components/featureMain1/FeatureMain1";
 
 
+
 const Home = () => {
   return (
     <>
       {usePageTitle('Archei Software')}
-      <Header />
-      <HeroMain />
-      <FeatureMain />
-      <FeatureMain1 />
-      <Footer />
+
+        <Header />
+        <HeroMain />
+        <FeatureMain />
+        <FeatureMain1 />
+        <Footer />
+      
     </>
   );
 };
