@@ -96,7 +96,7 @@ const SignIn: React.FC = () => {
                 </div>
 
                 <p className="mt-3 text-gray-500 dark:text-gray-300">
-                  Faça o Sign In para acessar sua conta
+                  Faça o Login para acessar sua conta
                 </p>
               </div>
               {/* Restante do seu código... */}
