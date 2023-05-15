@@ -6,13 +6,14 @@
     "name": "Bruno Seixas",
     "email": "seixasbru@gmail.com"
   },
-  "main": "index.js",
   "license": "MIT",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node src/index",
+    "start": "node index",
     "dev": "nodemon src/index"
   },
-  "type": "module",
+
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
