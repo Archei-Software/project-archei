@@ -10,12 +10,6 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
 
-  const [darkMode, setDarkMode] = useState(() => {
-    const isDarkMode =
-      document.cookie.includes("darkMode=true");
-    return isDarkMode;
-  });
-
   const location = useLocation();
   const isActive = (path: string) => {
     return location.pathname === path
@@ -28,30 +22,36 @@ const Navigation = () => {
       ? "dark:bg-red-600 sm:dark:bg-none bg-red-600 text-white dark:text-black"
       : "dark:text-white text-black";
   };
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      document.cookie = "darkMode=true; path=/";
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.cookie =
-        "darkMode=false; path=/;";
-    }
-  }, [darkMode]);
+  
+  const [darkMode, setDarkMode] = useState(() => {
+    const isDarkMode = document.cookie.includes("darkMode=true");
+    return isDarkMode || false;
+  });
 
   const handleDarkModeToggle = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
-  
+
     if (newDarkMode) {
-      document.documentElement.classList.add("dark");
       document.cookie = "darkMode=true; path=/";
     } else {
-      document.documentElement.classList.remove("dark");
       document.cookie = "darkMode=false; path=/";
     }
   };
+
+  useEffect(() => {
+    if (!document.cookie.includes("darkMode")) {
+      document.cookie = "darkMode=true; path=/";
+    }
+  }, []);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
 
   return (
     <nav className="relative bg-white shadow dark:bg-[#101010]">
