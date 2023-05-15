@@ -12,7 +12,7 @@ const Navigation = () => {
 
   const [darkMode, setDarkMode] = useState(() => {
     const isDarkMode =
-      document.cookie.includes("darkMode=true") || window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.cookie.includes("darkMode=true");
     return isDarkMode;
   });
 
@@ -36,12 +36,21 @@ const Navigation = () => {
     } else {
       document.documentElement.classList.remove("dark");
       document.cookie =
-        "darkMode=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        "darkMode=false; path=/;";
     }
   }, [darkMode]);
 
   const handleDarkModeToggle = () => {
-    setDarkMode(!darkMode);
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+  
+    if (newDarkMode) {
+      document.documentElement.classList.add("dark");
+      document.cookie = "darkMode=true; path=/";
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.cookie = "darkMode=false; path=/";
+    }
   };
 
   return (
