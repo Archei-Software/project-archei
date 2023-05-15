@@ -61,7 +61,7 @@ const CookieBanner = () => {
 
           <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
             Olá, este site utiliza cookies essenciais para garantir seu correto
-            funcionamento e para melhorar seu desenvolvimento. Os cookies serão configurados apenas após o consentimento.
+            funcionamento e para melhorar seu desenvolvimento. Os cookies serão configurados apenas após o consentimento. Se possuir alguma dúvida <a href="#" className="text-red-500 hover:underline">Leia as políticas de cookies</a>.
           </p>
 
           <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
@@ -76,7 +76,7 @@ const CookieBanner = () => {
               Aceitar
             </button>
             <button
-              className="text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-300 dark:text-white dark:hover:bg-gray-900 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+              className="text-xs border text-gray-800 hover:bg-gray-100 dark:border-gray-300 dark:text-white dark:hover:bg-gray-700 font-medium rounded-lg px-4 py-2.5 duration-300 transition-colors focus:outline-none"
               onClick={handleDeclineCookies}
             >
               Não Aceitar
