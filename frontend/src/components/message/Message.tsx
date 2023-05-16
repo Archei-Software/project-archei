@@ -60,15 +60,6 @@ const [message, setMessage] = useState('');
                 placeholder='Seu nome'
                 required
                 className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                data-ddg-inputtype="identities.emailAddress"
-                data-ddg-autofill="true"
-                style={{
-                  backgroundSize: "auto 26px",
-                  backgroundPosition: "right center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundOrigin: "content-box",
-                  transition: "background 0s ease 0s",
-                }}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
