@@ -1,3 +1,4 @@
+import React from 'react';
 import Loader from './pages/misc/Loader';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
