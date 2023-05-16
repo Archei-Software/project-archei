@@ -12,7 +12,7 @@ const AboutTeam: React.FC = () => {
             Nossa equipe <span className="font-bold text-red-600">Executiva</span>
           </h1>
 
-          <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-8 md:grid-cols-2 xl:grid-cols-2 xl:max-w-2xl xl:ml-[25rem]">
+          <div className="grid grid-cols-2 gap-8 mt-8 xl:mt-8 md:grid-cols-2 xl:grid-cols-2 xl:max-w-2xl xl:ml-[25rem]">
             <div className="flex flex-col items-center">
               <img
                 className="object-cover w-full rounded-xl aspect-square"
