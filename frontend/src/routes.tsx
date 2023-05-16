@@ -2,7 +2,7 @@ import Loader from './pages/misc/Loader';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 //import Work from './pages/Work';
-//import About from './pages/About';
+import About from './pages/About';
 //import WeDo from './pages/WeDo';
 import Error404 from './pages/error/Error404'
 import Construction from './pages/error/Construction';
@@ -19,7 +19,7 @@ const Rotas = () => (
       <Route path="/pt-br/oque-fazemos" element={<Construction />} />
       <Route path="/pt-br/contato" element={<Contact />} />
       <Route path="/pt-br/nosso-trabalho" element={<Construction />} />
-      <Route path="/pt-br/sobre" element={<Construction />} />
+      <Route path="/pt-br/sobre" element={<About />} />
       <Route path="/pt-br/login" element={<Login />} />
       <Route path="pt-br/user" element={<PrivateRoute />}>
         <Route path="pt-br/user/home" element={<Construction/>}/>
