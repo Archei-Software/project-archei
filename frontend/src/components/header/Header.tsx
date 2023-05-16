@@ -144,6 +144,14 @@ const Navigation = () => {
                 Sobre a Archei
               </Link>
               <Link
+                to="/pt-br/blog"
+                className={`px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold mr-2 ${isActive(
+                  "/pt-br/blog"
+                )}`}
+              >
+                Blog
+              </Link>
+              <Link
                 to="/pt-br/oque-fazemos"
                 className={`px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold ${isActive(
                   "/pt-br/oque-fazemos"
