@@ -149,7 +149,7 @@ const Navigation = () => {
                   "/pt-br/blog"
                 )}`}
               >
-                Blog
+                Nosso Blog
               </Link>
               <Link
                 to="/pt-br/oque-fazemos"
