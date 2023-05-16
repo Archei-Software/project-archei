@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiSun, FiMoon } from "react-icons/fi";
-import logo from '../../assets/imgs/logo.png';
+//import logo from "../../assets/imgs/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +60,7 @@ const Navigation = () => {
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <Link to="/pt-br" className="flex items-center justify-between">
-              <img className="w-10 h-10" src={logo} alt="" />
+              <img className="w-10 h-10" src='https://archei-frontend.netlify.app/assets/logoMin-bd28c813.png' alt="" />
               <h1 className="hidden lg:block text-black dark:text-white mt-3 ml-1 text-2xl ">
                 Archei Software
               </h1>
