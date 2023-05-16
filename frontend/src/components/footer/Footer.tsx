@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./../../assets/imgs/logoMin.png";
+import logoMin from "./../../assets/imgs/logoMin.png";
 
 const Footer: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="text-gray-600 body-font border-t-[0.08rem] border-gray-200 dark:border-[#0000002e]">
     <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-      <img src={logo} alt="Logo da Archei" className="w-10" />
+      <img src={logoMin} alt="Logo da Archei" className="w-10" />
         <span className="ml-3 text-xl text-black dark:text-white">Archei Software</span>
       </a>
       <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Archei Software - Todos os direitos reservados -

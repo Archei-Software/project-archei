@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import Login from "../components/loginForm/LoginForm";
-import usePageTitle from "../hooks/usePageTitle";
+import usePageTitle from "../hooks/UsePageTitle";
 const login: React.FC = () => {
   return (
     <>

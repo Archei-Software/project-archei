@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/header/Header";
 import Footer from "./../components/footer/Footer";
 import usePageTitle from '../hooks/UsePageTitle';
-import HeroMain from "../components/heroMain/HeroMain"
+import HeroMain from '../components/heroMain/HeroMain';
 import FeatureMain from "../components/featureMain/FeatureMain";
 import FeatureMain1 from "../components/featureMain1/FeatureMain1";
 
