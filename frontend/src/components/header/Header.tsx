@@ -167,12 +167,11 @@ const Navigation = () => {
               >
                 Entre em contato
               </Link>
-              <Link
-                to="/pt-br"
+              <span
                 className="px-3 py-2 duration-200 hover:text-red-600 dark:hover:text-red-600 rounded-md font-semibold dark:text-white text-black cursor-not-allowed"
               >
                 PT-BR
-              </Link>
+              </span>
               <div
                 className={`${
                   darkMode
