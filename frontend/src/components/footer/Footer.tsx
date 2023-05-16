@@ -1,4 +1,3 @@
-import React from "react";
 import logoMin from "./../../assets/imgs/logoMin.png";
 
 const Footer: React.FC = () => {

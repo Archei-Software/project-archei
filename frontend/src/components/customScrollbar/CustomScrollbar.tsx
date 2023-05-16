@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactNode } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
 type CustomScrollbarProps = {

@@ -1,4 +1,3 @@
-import React from "react";
 import {AiOutlineMail} from 'react-icons/ai';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';

@@ -1,4 +1,3 @@
-import React from "react";
 import { MdOutlineDevices } from "react-icons/md";
 import { FaShoppingCart } from "react-icons/fa";
 import { HiPaintBrush } from "react-icons/hi2";

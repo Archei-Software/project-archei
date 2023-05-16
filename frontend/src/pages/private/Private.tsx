@@ -1,4 +1,3 @@
-import React from "react";
 import jwt_decode, { JwtPayload } from "jwt-decode";
 import { Navigate, Outlet } from "react-router-dom";
 
