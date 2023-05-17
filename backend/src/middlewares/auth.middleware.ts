@@ -54,7 +54,7 @@ export const authMiddleware = (req: AuthRequest, res: Response, next: NextFuncti
 
       return next();
     });
-  } catch (err) {
+  } catch (err: any) {
     res.status(500).send(err.message);
   }
 };
