@@ -28,7 +28,7 @@ const SignIn: React.FC = () => {
     e.preventDefault();
     
     const newItem = { email, password };
-    const response = await axios.post('https://api-happy-makeup.onrender.com/auth', newItem); // Supondo que o token esteja presente na resposta do servidor
+    const response = await axios.post('https://api-archei.onrender.com/auth', newItem); // Supondo que o token esteja presente na resposta do servidor
     const data = response.data;
     if (data.message === 'Login realizado com sucesso') {
       navigate("/user/profile");
