@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import logoMin from "./../../assets/imgs/logoMin.png";
+import setCookie from "../../hooks/Cookie";
 
 interface Credentials {
   email: string;
@@ -22,17 +24,18 @@ const SignIn: React.FC = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // Verificar se o email e a senha são válidos
-    if (email === "admin@archei.com" && password === "admin") {
-      // Login bem-sucedido
-      navigate("../pt-br/user/home");
-      setError("Email e senha corretos.");
-      // Redirecionar ou realizar outras ações necessárias
+    
+    const newItem = { email, password };
+    const response = await axios.post('https://api-happy-makeup.onrender.com/auth', newItem); // Supondo que o token esteja presente na resposta do servidor
+    const data = response.data;
+    if (data.message === 'Login realizado com sucesso') {
+      navigate("/user/profile");
+      setCookie("token", data.token, 7);
     } else {
-      // Login inválido
+      setPassword("");
+      setEmail("");
       setError("Email ou senha incorretos.");
     }
   };

@@ -23,7 +23,7 @@ const Rotas = () => (
       <Route path="/pt-br/sobre" element={<About />} />
       <Route path="/pt-br/login" element={<Login />} />
       <Route path="pt-br/user" element={<PrivateRoute />}>
-        <Route path="pt-br/user/home" element={<Construction/>}/>
+        <Route path="pt-br/user/profile" element={<Construction/>}/>
       </Route>
       <Route path="*" element={<Error404 />} />
     </Routes>
