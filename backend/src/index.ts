@@ -1,12 +1,19 @@
-import { server } from './server/Server';
 import cors from 'cors';
+import express from 'express';
+import dotenv from "dotenv"
 
-const corsOptions = {
-    origin: ['http://localhost:5173', 'https://archei.vercel.app/'],
-    methods: 'GET,POST',
-    allowedHeaders: 'Content-Type,Authorization',
-  };
-  
-server.use(cors(corsOptions));
+import connectDatabase from "../src/database/db"
+import authRoute from "../src/routes/auth.routes"
+
+const server = express();
+server.use(express.json());
+
+dotenv.config();
+connectDatabase();
+server.use("/auth", authRoute)
+
+server.use(cors({
+    origin: '*'
+  }));
 
 server.listen(3000, () => console.log('Server is running port 3000'));
